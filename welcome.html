@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>String Methods Example</title>
+<script>
+function stringMethodsDemo() {
+    let text = "  Hello JavaScript Methods!  ";
+
+    // 1️⃣ length
+    document.write("1. Length: " + text.length + "<br>");
+
+    // 2️⃣ trim()
+    let trimmed = text.trim();
+    document.write("2. Trim: " + trimmed + "<br>");
+
+    // 3️⃣ toUpperCase()
+    document.write("3. Uppercase: " + trimmed.toUpperCase() + "<br>");
+
+    // 4️⃣ toLowerCase()
+    document.write("4. Lowercase: " + trimmed.toLowerCase() + "<br>");
+
+    // 5️⃣ charAt()
+    document.write("5. charAt(1): " + trimmed.charAt(1) + "<br>");
+
+    // 6️⃣ indexOf()
+    document.write("6. indexOf('Script'): " + trimmed.indexOf("Script") + "<br>");
+
+    // 7️⃣ slice()
+    document.write("7. Slice(6, 16): " + trimmed.slice(6, 16) + "<br>");
+
+    // 8️⃣ replace()
+    document.write("8. Replace: " + trimmed.replace("JavaScript", "JS") + "<br>");
+
+    // 9️⃣ split()
+    let arr = trimmed.split(" ");
+    document.write("9. Split: " + arr + "<br>");
+
+    // 🔟 concat()
+    document.write("10. Concat: " + trimmed.concat(" - Awesome!") + "<br>");
+}
+</script>
+</head>
+<body onload="stringMethodsDemo()">
+</body>
+</html>
+
